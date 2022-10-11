@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00630F4B28F4BE4900E587F8 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00630F4A28F4BE4900E587F8 /* DataModel.swift */; };
+		00630F4D28F4C28800E587F8 /* DataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00630F4C28F4C28800E587F8 /* DataViewModel.swift */; };
+		00630F4F28F4CB7800E587F8 /* SongListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00630F4E28F4CB7800E587F8 /* SongListViewModel.swift */; };
+		00630F5128F4E2B700E587F8 /* ArtworkLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00630F5028F4E2B700E587F8 /* ArtworkLoader.swift */; };
 		0090E73228EFA53E00365373 /* iTunesSearchChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0090E73128EFA53E00365373 /* iTunesSearchChallengeApp.swift */; };
 		0090E73428EFA53E00365373 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0090E73328EFA53E00365373 /* ContentView.swift */; };
 		0090E73628EFA54000365373 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0090E73528EFA54000365373 /* Assets.xcassets */; };
@@ -14,6 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00630F4A28F4BE4900E587F8 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		00630F4C28F4C28800E587F8 /* DataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewModel.swift; sourceTree = "<group>"; };
+		00630F4E28F4CB7800E587F8 /* SongListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongListViewModel.swift; sourceTree = "<group>"; };
+		00630F5028F4E2B700E587F8 /* ArtworkLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkLoader.swift; sourceTree = "<group>"; };
 		0090E72E28EFA53E00365373 /* iTunesSearchChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTunesSearchChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0090E73128EFA53E00365373 /* iTunesSearchChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesSearchChallengeApp.swift; sourceTree = "<group>"; };
 		0090E73328EFA53E00365373 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -33,6 +41,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00630F4728F4BE1700E587F8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		00630F4828F4BE2A00E587F8 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				00630F4C28F4C28800E587F8 /* DataViewModel.swift */,
+				00630F4E28F4CB7800E587F8 /* SongListViewModel.swift */,
+				00630F5028F4E2B700E587F8 /* ArtworkLoader.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		00630F4928F4BE3A00E587F8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				00630F4A28F4BE4900E587F8 /* DataModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		0090E72528EFA53E00365373 = {
 			isa = PBXGroup;
 			children = (
@@ -52,6 +85,9 @@
 		0090E73028EFA53E00365373 /* iTunesSearchChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				00630F4928F4BE3A00E587F8 /* Models */,
+				00630F4828F4BE2A00E587F8 /* ViewModels */,
+				00630F4728F4BE1700E587F8 /* Views */,
 				0090E73128EFA53E00365373 /* iTunesSearchChallengeApp.swift */,
 				0090E73328EFA53E00365373 /* ContentView.swift */,
 				0090E73528EFA54000365373 /* Assets.xcassets */,
@@ -139,8 +175,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00630F4D28F4C28800E587F8 /* DataViewModel.swift in Sources */,
+				00630F5128F4E2B700E587F8 /* ArtworkLoader.swift in Sources */,
 				0090E73428EFA53E00365373 /* ContentView.swift in Sources */,
+				00630F4F28F4CB7800E587F8 /* SongListViewModel.swift in Sources */,
 				0090E73228EFA53E00365373 /* iTunesSearchChallengeApp.swift in Sources */,
+				00630F4B28F4BE4900E587F8 /* DataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
