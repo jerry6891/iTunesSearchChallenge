@@ -11,6 +11,7 @@ struct ContentView: View {
     
     // MARK: - Properties
     @ObservedObject var viewModel: SongListViewModel
+    @State var photos: [Song] = []
     
     // MARK: - UI Development
     var body: some View {
@@ -21,12 +22,31 @@ struct ContentView: View {
                 .clipShape(RoundedRectangle(cornerRadius: 30))
                 .padding()
                 .shadow(color: .black.opacity(0.5), radius: 10, x: 3, y: 3)
-
+                
                 if viewModel.songs.isEmpty {
                     EmptyStateView()
                 } else {
                      List(viewModel.songs) { song in
-                         SongView(song: song)
+                         NavigationLink(destination: {
+                             VStack {
+                                 Spacer()
+                                 Image(systemName: "music.note.tv")
+                                     .resizable()
+                                     .foregroundColor(.indigo)
+                                     .frame(width: 200, height: 200)
+                                     .padding(.bottom, 5)
+                                 
+                                 Text(song.trackName)
+                                     .font(.custom("HelveticaNeue-UltraLight", size: 66))
+                                     .foregroundColor(.red)
+                                 Text(song.artistName)
+                                     .font(.custom("HelveticaNeue-Bold", size: 26))
+                                     .foregroundColor(.gray)
+                                 Spacer()
+                             }.padding(.bottom, 200)
+                         }) {
+                             SongView(song: song)
+                         }
                      }
                      .listStyle(PlainListStyle())
                 }
@@ -36,7 +56,7 @@ struct ContentView: View {
     }
 }
 
-// MARK: - Extensions + Strcutures
+// MARK: - Extensions + Structures
 struct SongView: View {
     @ObservedObject var song: SongViewModel
     var body: some View {
@@ -88,6 +108,7 @@ struct EmptyStateView: View {
     }
 }
 
+// MARK: - Search Bar Business Logic
 struct SearchBar: UIViewRepresentable {
     typealias UIViewType = UISearchBar
     

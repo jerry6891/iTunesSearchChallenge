@@ -41,13 +41,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00630F4728F4BE1700E587F8 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		00630F4828F4BE2A00E587F8 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
@@ -85,11 +78,10 @@
 		0090E73028EFA53E00365373 /* iTunesSearchChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				00630F4928F4BE3A00E587F8 /* Models */,
-				00630F4828F4BE2A00E587F8 /* ViewModels */,
-				00630F4728F4BE1700E587F8 /* Views */,
 				0090E73128EFA53E00365373 /* iTunesSearchChallengeApp.swift */,
 				0090E73328EFA53E00365373 /* ContentView.swift */,
+				00630F4928F4BE3A00E587F8 /* Models */,
+				00630F4828F4BE2A00E587F8 /* ViewModels */,
 				0090E73528EFA54000365373 /* Assets.xcassets */,
 				0090E73728EFA54100365373 /* iTunesSearchChallenge.entitlements */,
 				0090E73828EFA54100365373 /* Preview Content */,
